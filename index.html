@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabla Dinamica</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Formulurio para agragar una comida -->
+    <div class="container">
+        <form id='new-information' action="" class="contenedor-form">
+            <label for="">Comida</label>
+            <input type="text" class="form-control" id='comida'>
+            
+            <label for="">Descripción</label>
+            <input type="text" class="form-control" id='descripcion'>
+            
+            <label for="">Calificación</label>
+            <input type="text" class="form-control" id='calificacion'>
+            
+            <button id='add-food' onclick="addFood()">Agregar comida</button>
+        </form>
+    </div>
+
+    <!-- tabla de elementos -->
+    <div class="container">
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Calificación</th>
+                </tr>
+            </thead>
+            <tbody id="food-table"></tbody>
+        </table>
+
+        <button id='showTable' class="showTable" onclick="showTable()">Mostrar Datos</button>
+    </div>
+
+</body>
+<script src="./js/index.js"></script>
+</html>
